@@ -1,2 +1,226 @@
-# wordlcup2026
-situs terbaik untuk menonton bola banyak bonus yang bisa di claim 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tampilan Piala Dunia 2026</title>
+    <!-- Memuat Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Meta Deskripsi dan Kata Kunci SEO -->
+    <meta name="description" content="Situs informasi lengkap Piala Dunia FIFA 2026 di Amerika (Kanada, Meksiko, AS). Termasuk sejarah turnamen, format 48 tim, dan tautan Nonton Live resmi.">
+    <meta name="keywords" content="Piala Dunia 2026, FIFA World Cup 2026, Nonton Live Piala Dunia, Jadwal Piala Dunia, Sejarah Piala Dunia, Amerika 2026, Kanada, Meksiko, Amerika Serikat">
+    
+    <!-- FAVICON BARU DARI USER -->
+    <link rel="icon" href="https://www.treasury.id/wp-content/uploads/2022/11/4gmrsO0ypcN0uuyzXrSXsZEqEIftLRhy31bhGuWH.png" type="image/png">
+    
+    <!-- Schema.org Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "url": "https://juarapialadunia2026.club/",
+          "name": "KEJUARAAN PIALA DUNIA 2026 ( AMERICA )",
+          "description": "Informasi, sejarah, dan tautan siaran langsung untuk Piala Dunia FIFA 2026 di Kanada, Meksiko, dan Amerika Serikat."
+        },
+        {
+          "@type": "SportsEvent",
+          "name": "Piala Dunia FIFA 2026",
+          "description": "Kejuaraan Sepak Bola Internasional pria yang diselenggarakan bersama oleh Kanada, Meksiko, dan Amerika Serikat, menampilkan 48 tim.",
+          "startDate": "2026-06-08", 
+          "endDate": "2026-07-19",
+          "location": {
+            "@type": "Place",
+            "name": "Amerika Utara",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": ["Kanada", "Meksiko", "Amerika Serikat"]
+            }
+          },
+          "organizer": {
+            "@type": "Organization",
+            "name": "FIFA",
+            "url": "https://www.fifa.com/"
+          },
+          "sport": "Sepak Bola"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Konfigurasi Tailwind & Style Metal/Black/Red --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #111111; /* Hitam Solid */
+            color: #e0e0e0; 
+        }
+        /* Custom Gradient Merah untuk Judul */
+        .text-fire-gradient {
+            background: linear-gradient(to right, #ffddaa, #ff4444, #ffddaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Background Utama Dark/Grid */
+        .bg-black-grid {
+            background-color: #111111;
+            background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+        /* Style untuk Kontainer Deskripsi (Metal Medium) */
+        .bg-metal-medium {
+            background-color: #1e1e1e; /* Abu-abu Sangat Gelap */
+            box-shadow: 
+                inset 0 2px 4px rgba(0,0,0,0.8), 
+                inset 0 -2px 4px rgba(255,255,255,0.05),
+                0 6px 15px rgba(255, 0, 0, 0.4); /* Bayangan luar merah */
+        }
+        /* Tombol Merah Khas */
+        .btn-red-live {
+            background-color: #dc2626; /* Merah Tailwind 600 */
+            color: #ffffff;
+            border: 2px solid #ef4444; /* Border Merah Lebih Terang */
+            box-shadow: 0 4px 10px rgba(220, 38, 38, 0.7), inset 0 1px 0 rgba(255,255,255,0.3);
+            text-shadow: 0 0 5px #000000;
+            animation: pulse-red 2s infinite; /* Efek berdenyut */
+        }
+        .btn-red-live:hover {
+            background-color: #b91c1c;
+            box-shadow: 0 6px 15px rgba(220, 38, 38, 0.9), inset 0 1px 0 rgba(255,255,255,0.4);
+            transform: scale(1.05);
+        }
+        /* Animasi Berdenyut */
+        @keyframes pulse-red {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+        }
+        /* Style Tombol Navbar */
+        .btn-nav {
+            background-color: #2a2a2a;
+            color: #ef4444;
+            border: 1px solid #4a4a4a;
+            transition: all 0.2s;
+        }
+        .btn-nav:hover {
+            background-color: #ef4444;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="antialiased bg-black-grid">
+
+    <div class="min-h-screen flex flex-col">
+
+        <!-- NAVIGASI ATAS: Daftar dan Login -->
+        <nav class="bg-black/90 p-4 border-b border-red-700/50 shadow-lg sticky top-0 z-30">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo/Nama Situs -->
+                <a href="#" class="text-xl font-bold text-red-500 font-orbitron tracking-wider">
+                    FIFA WORLD CUP 2026
+                </a>
+                
+                <!-- Tombol Daftar dan Login DENGAN SHORTLINK -->
+                <div class="flex space-x-3">
+                    <!-- Tombol Daftar -->
+                    <a href="https://tinyurl.com/dewanpundit" class="btn-nav px-4 py-2 rounded-lg text-sm font-semibold uppercase" target="_blank">
+                        Daftar
+                    </a>
+                    <!-- Tombol Login -->
+                    <a href="https://tinyurl.com/dewanpundit" class="btn-nav px-4 py-2 rounded-lg text-sm font-semibold uppercase" target="_blank">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 1. BAGIAN BANNER (HEADER) - Tampilan Piala Dunia -->
+        <header class="relative bg-black-grid overflow-hidden border-b-4 border-red-700">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+            
+            <!-- GAMBAR BANNER DARI USER -->
+            <div class="h-80 sm:h-96 lg:h-[400px] relative" 
+                 style="background-image: url('https://res.cloudinary.com/daofmxe8e/image/upload/v1761434358/639f5dd42f38d_fraczo.jpg'); 
+                        background-size: cover; 
+                        background-position: center; 
+                        filter: brightness(70%);"> <!-- Mengurangi brightness agar teks lebih terlihat -->
+            </div>
+
+            <!-- Konten di atas Banner (DIBATASI LEBARNYA) -->
+            <div class="absolute inset-0 flex items-center justify-center z-20 p-4">
+                <div class="text-center max-w-5xl mx-auto p-6 bg-black/70 rounded-2xl border-2 border-red-700 shadow-2xl">
+                    <h1 class="text-4xl sm:text-7xl font-extrabold mb-4 tracking-tighter text-fire-gradient font-orbitron">
+                        KEJUARAAN PIALA DUNIA 2026 ( AMERICA )
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 font-light max-w-xl mx-auto font-roboto-mono mb-8">
+                        Kanada, Meksiko, dan Amerika Serikat .
+                    </p>
+                    <!-- TOMBOL LIVE PIALA DUNIA DENGAN SHORTLINK BARU -->
+                    <a href="https://juarapialadunia2026.club/" class="inline-block px-10 py-4 btn-red-live rounded-full uppercase font-bold text-lg tracking-widest transition duration-300" target="_blank">
+                        NOTNON LIVE PIALA DUNIA 2026
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. BAGIAN DESKRIPSI & SEJARAH -->
+        <main id="deskripsi-bagian" class="flex-grow container mx-auto px-4 py-16 sm:py-24">
+            <div class="bg-metal-medium rounded-2xl p-8 sm:p-12 lg:p-16 border border-gray-700">
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-fire-gradient mb-4 font-orbitron">
+                        DESKRIPSI DAN SEJARAH
+                    </h2>
+                    <p class="text-lg text-gray-400 max-w-4xl mx-auto font-roboto-mono">
+                        Memahami turnamen paling bergengsi di dunia sepak bola.
+                    </p>
+                </div>
+
+                <div class="space-y-8 text-gray-300 text-lg">
+                    
+                    <!-- Deskripsi Piala Dunia 2026 -->
+                    <section>
+                        <h3 class="text-2xl font-bold text-red-500 mb-3 border-b border-gray-700 pb-2 font-orbitron">
+                            Piala Dunia 2026: Edisi Terbesar
+                        </h3>
+                        <p class="mb-4">
+                            Piala Dunia FIFA 2026 akan menjadi turnamen bersejarah karena diselenggarakan bersama oleh tiga negara: Kanada, Meksiko, dan Amerika Serikat. Edisi ini juga akan menjadi yang pertama kali diikuti oleh **48 tim peserta**, meningkat dari format sebelumnya yang hanya 32 tim. Perluasan ini bertujuan memberikan kesempatan lebih besar bagi negara-negara dari seluruh dunia untuk berpartisipasi dalam kompetisi olahraga paling banyak disaksikan secara global. Final dijadwalkan akan dimainkan pada 19 Juli 2026.
+                        </p>
+                        <p class="text-sm italic text-gray-500">
+                            (Sumber: FIFA)
+                        </p>
+                    </section>
+
+                    <!-- Sejarah Piala Dunia -->
+                    <section>
+                        <h3 class="text-2xl font-bold text-red-500 mb-3 border-b border-gray-700 pb-2 font-orbitron">
+                            Sejarah Singkat Piala Dunia FIFA
+                        </h3>
+                        <p class="mb-4">
+                            Piala Dunia FIFA adalah kompetisi sepak bola internasional yang diselenggarakan setiap empat tahun sekali oleh Federasi Sepak Bola Internasional (FIFA). Turnamen ini dicetuskan oleh Presiden FIFA saat itu, **Jules Rimet**, yang melihat kebutuhan akan turnamen internasional independen dari Olimpiade.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>**Inaugurasi (1930):** Piala Dunia pertama diadakan pada tahun 1930 di **Uruguay**, dengan hanya 13 tim peserta. Uruguay keluar sebagai juara dunia pertama.</li>
+                            <li>**Jeda Perang:** Kompetisi sempat terhenti pada tahun 1942 dan 1946 karena Perang Dunia II.</li>
+                            <li>**Perkembangan Format:** Jumlah peserta terus bertambah, dari 16 tim (sejak 1954) menjadi 24 tim (1982), dan kemudian menjadi 32 tim (sejak 1998) hingga ekspansi terbaru menjadi 48 tim pada 2026.</li>
+                            <li>**Trofi:** Trofi asli bernama Piala Jules Rimet. Setelah Brasil memenangkan trofi itu secara permanen pada tahun 1970, trofi baru yang dikenal sebagai Trofi Piala Dunia FIFA diperkenalkan pada tahun 1974 dan digunakan hingga saat ini.</li>
+                            <li>**Juara Bertahan:** Juara bertahan saat ini adalah **Argentina** (pemenang Piala Dunia 2022).</li>
+                        </ul>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+        
+        <!-- Footer Sederhana - Tampilan Piala Dunia -->
+        <footer class="bg-metal-medium text-gray-400 py-6 mt-auto border-t-4 border-red-700">
+            <div class="container mx-auto px-4 text-center text-sm font-roboto-mono">
+                &copy; 2025 PIALA DUNIA 2026. Antarmuka Resmi.
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
